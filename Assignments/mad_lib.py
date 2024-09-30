@@ -1,4 +1,3 @@
-
 #Once upon a time, in a cold forest
 #there lived a small cat
 #everyday, the cat would walk slowly
