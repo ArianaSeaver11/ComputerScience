@@ -13,13 +13,21 @@
 def free_shipping(member, price, age, consent):
     if member == True or price >= 25:
         print("free shipping")
+    if age <= 18 or consent == True:
+         print("free shipping")
     else:
         print("no free shipping")
 
-    if age <= 18 or consent == True:
-        print("free shipping")
+free_shipping(True, 30, 89, True)   #to run it
 
-    else:
-        print("nope, no free shipping")
+prime = True 
+cost = 20 
+age = 17
+consent = False
 
-free_shipping(True, 30, 89, True)
+
+if (prime == True or cost >= 25) and (age >= 18 or consent == True): 
+    print("free shipping")
+
+else:
+    print("Nope, no free shipping")
