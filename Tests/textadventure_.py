@@ -10,6 +10,7 @@ def start_adventure():      # Getting ingredients to make a cake at Walmart
    
    elif choice == "2":
        go_home()
+      
 
    else:
        print("Invalid choice. Try again.")
@@ -21,6 +22,7 @@ def enter_walmart():
 
 def go_home():
     print("You decide to go back home, your mother is upset that there is no cake and kicks you out of the house.")     # first ending
+    exit()
   
 
 start_adventure()
@@ -50,6 +52,7 @@ def first_stop():
 def enter_candy():
    print("You decide that the cake can wait, you're starving!")
    print("Because you bought candy,you end up getting diabetes, causing you many health problems.")       #2nd ending??
+   exit()
 
 
 def enter_baking():
@@ -90,6 +93,7 @@ def keep_looking():
 
 def give_up():
    print("You give up and just go home, your mother is very disappointed")      # 3rd ending
+   exit()
 
 second_stop()
 
@@ -121,6 +125,7 @@ def unexpented_attack():
 
 def karen_attack():
    print("She sees you and attacks; her verbal assault causes you to die of embarrassment.")    # 4th ending??
+   exit()
 
 third_stop()
 
@@ -154,11 +159,39 @@ def enter_dairy():
 def enter_electronics():
     print("You go to the electronics and think that maybe your mother would like something other than a cake...")
     print("You decide your mom doesn't need cake, what she really needs is a new TV")               # 5th ending?
+    exit()
 
 forth_stop()
 
 
 def fifth_stop():
     print("You feel like something or someone is watching you...")
-    print("1. ")
-    print("2. ")
+    print("1. Look for this creature")
+    print("2. Ignore it ")
+    print("3. Start running")
+
+    choice = input("> ")
+
+    if choice == "1":
+        enter_creature()
+
+    elif choice == "2":
+        enter_ignore()
+
+    elif choice == "3":
+        enter_running()
+
+    else:
+        print("Invalid choice. Try again.")
+        fifth_stop()
+
+def enter_creature():
+    print("")
+
+def enter_ignore():
+    print("")
+
+def enter_running():
+    print("")
+
+fifth_stop()
